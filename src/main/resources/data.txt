@@ -1,0 +1,86 @@
+ошибка в файле C:\Users\prost\OneDrive\Рабочий стол\chertovka\обработанные
+C:\Users\prost\Downloads\Telegram Desktop\photo_2_2023-03-14_15-27-00.jpg (Не удается найти указанный файл)
+
+ошибка в файле C:\Users\prost\OneDrive\Рабочий стол\chertovka\обработанные
+C:\Users\prost\Downloads\Telegram Desktop\photo_10_2023-03-14_22-03-21.jpg (Не удается найти указанный файл)
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_5_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_6_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_7_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_8_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_9_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_5_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_6_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_7_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_8_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_9_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_5_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_6_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_7_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_8_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_9_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_5_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_6_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_7_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_8_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
+ошибка в файле C:\Users\prost\Downloads\Telegram Desktop\photo_9_2023-03-15_00-52-08.jpg
+Cannot construct instance of `com.converter.text.model.ImageToTextResponse` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('You may only perform this action upto maximum 180 number of times within 3600 seconds')
+ at [Source: (String)""You may only perform this action upto maximum 180 number of times within 3600 seconds""; line: 1, column: 1]
+
