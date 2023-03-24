@@ -2,6 +2,7 @@ package com.converter.text.model;
 
 import io.hypersistence.utils.hibernate.type.json.JsonType;
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.Type;
@@ -11,6 +12,7 @@ import java.util.Map;
 @Entity
 @SuperBuilder
 @NoArgsConstructor
+@Getter
 public class ConvertedText {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

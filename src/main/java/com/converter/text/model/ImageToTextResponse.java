@@ -41,13 +41,4 @@ public class ImageToTextResponse {
         @JsonProperty("TextOverlay")
         private Object textOverlay;
     }
-
-    public static void main(String[] args) throws JsonProcessingException {
-        ObjectMapper objectMapper = new ObjectMapper()
-                .registerModule(new JavaTimeModule());
-        String s = "{\"ParsedResults\":[{\"TextOverlay\":{\"Lines\":[],\"HasOverlay\":false,\"Message\":\"Text overlay is not provided as it is not requested\"},\"TextOrientation\":\"0\",\"FileParseExitCode\":1,\"ParsedText\":\"30\\r\\nЗадание для девушки.\\r\\nВстань к нему спиной\\r\\nи, пританцовывая, сними с себя\\r\\nвсю одежду, которая\\r\\nприкрывает твою попку,\\r\\nи даже трусики!\\r\\n\",\"ErrorMessage\":\"\",\"ErrorDetails\":\"\"}],\"OCRExitCode\":1,\"IsErroredOnProcessing\":false,\"ProcessingTimeInMilliseconds\":\"21906\",\"SearchablePDFURL\":\"Searchable PDF not generated as it was not requested.\"}";
-        ImageToTextResponse imageToTextResponse = objectMapper.readValue(s, ImageToTextResponse.class);
-        System.out.println(imageToTextResponse);
-
-    }
 }

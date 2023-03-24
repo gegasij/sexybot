@@ -7,17 +7,13 @@ import com.converter.text.model.ImageToTextResponse;
 import com.converter.text.repository.ConvertedTextRepository;
 import com.converter.text.repository.GenericTextRepository;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -26,7 +22,19 @@ public class ConverterTextService {
     private final GenericTextRepository genericTextRepository;
     private final FileService fileService;
 
-    @EventListener(ApplicationReadyEvent.class)
+
+    public void changeAllFiles() {
+        List<ConvertedText> convertedTexts = convertedTextRepository.findAll();
+        convertedTexts
+                .stream()
+                .filter(it -> it.getData().containsKey("type"))
+                .filter(it->it.getData().get("type").equals("truthOrDare"))
+                .peek(it -> it.getData().put("typeTOD", "Truth"))
+                .toList();
+
+        convertedTextRepository.saveAllAndFlush(convertedTexts);
+    }
+
     public void convertAllFiles() {
         List<String> folderFilePaths = fileService.getFolderFilePaths("C:\\Users\\prost\\Downloads\\Telegram Desktop");
 
@@ -49,7 +57,7 @@ public class ConverterTextService {
         ImageToTextService imageToTextService = new ImageToTextService();
         try {
             ImageToTextResponse convert = imageToTextService.convert(request);
-            if(!convert.getOCRExitCode().equals("1")){
+            if (!convert.getOCRExitCode().equals("1")) {
                 System.exit(Integer.parseInt(convert.getOCRExitCode()));
             }
             genericTextRepository.save(GenericText.builder().text(convert.getParsedResults().get(0).getParsedText()).build());
@@ -64,21 +72,46 @@ public class ConverterTextService {
     }
 
     private static Map<String, Object> getData(ImageToTextResponse convert) {
-        HashMap<String, Object> hashMap = new HashMap();
+        HashMap<String, Object> hashMap = new HashMap<>();
         String parsedText = convert.getParsedResults().get(0).getParsedText();
 
         parsedText = parsedText.replace("\r\n", " ");
 
-        parsedText = setNumber(parsedText, hashMap);
+        //parsedText = setNumber(parsedText, hashMap);
+        parsedText = deleteStart(parsedText);
         setData(parsedText, hashMap);
 
         return hashMap;
     }
 
+    public static String deleteStart(String parsedString) {
+        String s = "действие";
+        List<String> possibleStringOptions = getPossibleStringOptions(s);
+        return possibleStringOptions.
+                stream()
+                .filter(parsedString::startsWith)
+                .findAny()
+                .map(it -> parsedString.replaceFirst(it + " ", ""))
+                .orElse(parsedString);
+    }
+
+    public static List<String> getPossibleStringOptions(String s) {
+        List<String> list = new ArrayList<>();
+        list.add(s);
+        for (int i = 0; i < s.toCharArray().length; i++) {
+            StringBuilder myName = new StringBuilder(s);
+            myName.setCharAt(i, ' ');
+            list.add(myName.toString());
+        }
+        return list;
+    }
+
     private static void setData(String parsedText, HashMap<String, Object> hashMap) {
         hashMap.put("data", parsedText);
-        hashMap.put("level", "CRAZY");
-        hashMap.put("condition", "new");
+        hashMap.put("level", "HARD");
+        hashMap.put("forWho", "female");
+        hashMap.put("type", "truthOrDare");
+        hashMap.put("typeTOD", "Dare");
     }
 
     private static String setNumber(String parsedText, HashMap<String, Object> hashMap) {
@@ -87,14 +120,9 @@ public class ConverterTextService {
             int i = NumberUtils.toInt(split.get(0), Integer.MAX_VALUE);
             if (i != Integer.MAX_VALUE) {
                 hashMap.put("number", i);
-                parsedText = parsedText.replaceFirst(split.get(0), "");
+                parsedText = parsedText.replaceFirst(split.get(0) + " ", "");
             }
         }
         return parsedText;
-    }
-
-    public static void main(String[] args) {
-        String s = "27 Задание для парня. Представь,что твоя девушка - это твоя одноклассница. Ты трахнул бы ее в школе? Хотел бы, чтобы она ласкала твой член под партой? На физкультуре лапал бы ее в раздевалке? Поделись своими фантазиями, прижимаясь к партнерше ";
-        System.out.println();
     }
 }
